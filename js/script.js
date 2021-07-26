@@ -216,7 +216,7 @@ function printQuote() {
  // setInterval Function - Automatically changes quote every 10 seconds
 
 
-
+/*https://javascript.info/settimeout-setinterval*/
 setInterval(() => {
 printQuote();
 
