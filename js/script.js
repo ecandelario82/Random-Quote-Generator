@@ -72,7 +72,7 @@ let quotes = [{
   },
   {
 
-  quote: "I was born to make mistakes, not to fake perfection",
+  quote: "I was born to make mistakes, not to fake perfection.",
   source: "Drake"
   
   },
@@ -148,7 +148,7 @@ let quotes = [{
   },
   {
 
-  quote: "In the middle of chaos lies opportunity",
+  quote: "In the middle of chaos lies opportunity.",
   source: "Bruce Lee",
   citation: "Martial Arts Magazine",
   year: "1970"
