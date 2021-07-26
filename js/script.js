@@ -3,13 +3,9 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-/*** 
- * `quotes` array 
-***/
+
+//Quotes array 
 
 let quotes = [{
 
@@ -162,9 +158,7 @@ let quotes = [{
 
 
 
-/***
- * `getRandomQuote` function
-***/
+//getRandomQuote Function - Produces random quote from array
 
 
 function getRandomQuote() {
@@ -177,9 +171,7 @@ function getRandomQuote() {
 
 
 
-/***
- * `printQuote` function
-***/
+//printQuote Function - Prints quote to browswer 
 
 
 
@@ -198,7 +190,7 @@ function printQuote() {
   }
 
   if (quote1.year) {
-    sumHtml += `<span class="year">${quote1.year}</span>` // added (+=) year to original string 
+    sumHtml += `<span class="year">${quote1.year}</span>` 
     
   }
 
@@ -212,7 +204,7 @@ function printQuote() {
   
 
 
-  document.getElementById('quote-box').innerHTML = sumHtml; //**returns string to browser**/
+  document.getElementById('quote-box').innerHTML = sumHtml; /*returns string to browswer*/
   
 
   }
@@ -220,18 +212,22 @@ function printQuote() {
 
 
 
- /***
- * `setInterval` function - setInterval( function, milliseconds, param_one, param_two, ...)
-***/
-setInterval(() => {  
+ 
+ // setInterval Function - Automatically changes quote every 10 seconds
+
+
+
+setInterval(() => {
 printQuote();
 
 }, 10000);
 
 
-  /***
- * `getRandomColor` function - setInterval (produce random RGB for background change)
-***/
+ 
+
+
+ // getRandomColor function - (produces random RGB and changes background when new quote appears)
+
 
 function getRandomColor() {
   const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
